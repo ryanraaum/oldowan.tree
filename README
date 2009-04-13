@@ -1,0 +1,48 @@
+Read and write tree tree files.
+
+oldowan.tree is a small bioinformatic utility to read and write trees in
+the tree_ format. tree is a new tree format designed to enable the
+labeling of nodes and branches with arbitrary information. 
+
+Installation Instructions
+=========================
+
+This package is pure Python and has no dependencies outside of the standard
+library. The easist way to install is using ``easy_install`` from the
+setuptools_ package.  This usually goes something like this::
+
+	$ easy_install oldowan.tree
+
+or on a unix-like system, assuming you are installing to the main Python
+``site-packages`` directory as a non-privileged user, this::
+
+	$ sudo easy_install oldowan.tree
+
+You may also use the standard python distutils setup method. Download the
+current source archive from the file list towards the bottom of this page,
+unarchive it, and install. On Mac OS X and many other unix-like systems, having
+downloaded the archive and changed to the directory containing this archive in
+your shell, this might go something like::
+
+	$ tar xvzf oldowan.tree*
+	$ cd oldowan.tree*
+	$ python setup.py install
+
+Quick Start
+===========
+
+Import Tree from oldowan.tree::
+
+  >>> from oldowan.tree import Tree
+
+Create a tree instance::
+
+  >>> tree = Tree()
+
+Release History
+===============
+
+1.0.0 (, 2009)
+    initial release of module.
+
+.. _setuptools: http://peak.telecommunity.com/DevCenter/EasyInstall
